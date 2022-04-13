@@ -30,8 +30,8 @@ public class MainAdapter extends RecyclerView.Adapter<MainAdapter.ViewHolder> {
     public MainAdapter.ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         //item xml 연결
         View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.item_list, parent, false); // 뷰타입 뷰에 레이아웃 인플레이터 클래스의 from 메서드 호출후 파라미터 전달
-        ViewHolder holder = new ViewHolder(view); // 뷰홀더타입 홀더 객체 생성후 생성자로 뷰 변수 전달
-        return holder; // 호출된곳으로 홀더를 반환
+        //ViewHolder holder = new ViewHolder(view); // 뷰홀더타입 홀더 객체 생성후 생성자로 뷰 변수 전달
+        return new ViewHolder(view); // 호출된곳으로 홀더를 반환
     }
 
     @Override
